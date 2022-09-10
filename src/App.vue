@@ -1,4 +1,11 @@
-<script setup></script>
+<script>
+import AddInput from "./components/AddInput.vue";
+export default {
+    components: {
+        AddInput,
+    },
+};
+</script>
 
 <template>
     <div class="h-100 w-full flex items-center justify-center">
@@ -9,17 +16,7 @@
                 <h1 class="text-grey-darkest text-center text-lg font-bold">
                     Todo List
                 </h1>
-                <div class="flex mt-4">
-                    <input
-                        class="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker"
-                        placeholder="Add Todo"
-                    />
-                    <button
-                        class="flex-no-shrink p-2 border-2 rounded text-slate-900 border-slate-800 hover:text-white hover:bg-slate-900"
-                    >
-                        Add
-                    </button>
-                </div>
+                <add-input />
             </div>
             <div>
                 <div class="flex mb-4 items-center">
