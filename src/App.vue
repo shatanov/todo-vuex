@@ -1,8 +1,11 @@
 <script>
 import AddInput from "./components/AddInput.vue";
+import ItemsList from "./components/ItemsList.vue";
+
 export default {
     components: {
         AddInput,
+        ItemsList,
     },
 };
 </script>
@@ -19,36 +22,7 @@ export default {
                 <add-input />
             </div>
             <div>
-                <div class="flex mb-4 items-center">
-                    <p class="w-full text-grey-darkest text-md">
-                        Add another component to Tailwind Components
-                    </p>
-                    <button
-                        class="flex-no-shrink p-2 ml-4 mr-2 border-2 rounded border-grey hover:border-green-600 hover:text-white hover:bg-green-600"
-                    >
-                        Done
-                    </button>
-                    <button
-                        class="flex-no-shrink p-2 ml-2 border-2 rounded border-grey hover:border-red-600 hover:text-white hover:bg-red-600"
-                    >
-                        Remove
-                    </button>
-                </div>
-                <div class="flex mb-4 items-center">
-                    <p class="w-full line-through text-green">
-                        Submit Todo App Component to Tailwind Components
-                    </p>
-                    <button
-                        class="flex-no-shrink p-2 ml-2 border-2 rounded border-grey hover:border-slate-900 hover:text-white hover:bg-slate-900"
-                    >
-                        Not Done
-                    </button>
-                    <button
-                        class="flex-no-shrink p-2 ml-2 border-2 rounded border-grey hover:border-red-600 hover:text-white hover:bg-red-600"
-                    >
-                        Remove
-                    </button>
-                </div>
+                <items-list />
             </div>
         </div>
     </div>
