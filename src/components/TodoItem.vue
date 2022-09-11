@@ -25,7 +25,7 @@ export default {
 <template>
     <div class="flex mb-4 items-center">
         <p
-            class="w-full text-grey-darkest text-md"
+            class="w-full text-grey-darkest text-md break-all"
             :class="{ 'line-through': !todo.active }"
         >
             {{ todo.text }}
